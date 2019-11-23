@@ -1,0 +1,84 @@
+:root {
+	--menu-width: 15%;
+	--color-2: 255, 249, 237;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	max-width: 100%;
+	height: 100%;
+	display: flex;
+	background: #555;
+	background: url(../images/email-pattern.png);
+}
+
+nav {
+	width: var(--menu-width);
+	/*height: 100%;*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+	position: fixed;
+	box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.4);
+}
+
+nav a {
+	width: 100%;
+	height: 3em;
+	background: rgb(var(--color-2));
+	border: solid 1px black;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+nav a:hover {
+	background: rgba(255, 255, 255, 0.7);
+	cursor: pointer;
+}
+
+nav a:active {
+	background: rgba(255, 255, 255, 0.7);
+	box-shadow: inset 0 0 0.5em rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+}
+
+main {
+	padding: 1em;
+	width: 85%;
+	max-height: 100%;
+	margin: 0 0 0 var(--menu-width);
+}
+
+.display {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+.desc {
+	margin: 2em auto 5em auto;
+	min-height: 15%;
+	max-width: 8.5in;
+}
+
+.card {
+	background: rgba(var(--color-2), 0.7);
+	padding: 1em;
+	margin: 0 0 1em 0;
+	border-radius: 1em;
+	box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.4);
+}

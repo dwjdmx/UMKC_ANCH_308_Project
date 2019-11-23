@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<nav>
+			<a onclick="loadPage('whitespace')">Whitespace</a>
+			<a onclick="loadPage('copy')">Copy, Cut, Paste</a>
+			<a onclick="loadPage('header')">Header & Footer</a>
+			<a onclick="loadPage('fonts')">Fonts</a>
+			<a onclick="loadPage('styles')">Styles</a>
+			<a onclick="loadPage('lists')">Lists</a>
+			<a onclick="loadPage('example')">Example: MLA Format Paper</a>
+		</nav>
+		<main>
+		</main>
+	</body>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script>
+		function loadPage(pg) {
+			$("main").load("pages/" + pg + "/page.html")
+		}
+		loadPage("whitespace");
+	</script>
+</html>
